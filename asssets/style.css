@@ -1,0 +1,54 @@
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 47px;
+  margin: 0;
+}
+
+.title {
+  margin-top: 100px;
+}
+
+img {
+  width: 105px;
+  height: 105px;
+}
+
+main {
+  background-color: #FBF9F9;
+  height: 524px;
+  display:flex;
+  flex-direction: column;
+}
+
+.allProperties {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.property {
+  font-size: 16px;
+  height: 148px;
+  width: 192px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainpart {
+  grid-area: mainpart;
+  border: solid 1px red
+}
+
+.asidepart {
+  grid-area: asidepart;
+   border: solid 1px red
+}
+
+.main {
+  display: grid;
+  grid-template-areas: " mainpart asidepart";
+  grid-template-columns: 80% 20%;
+}
